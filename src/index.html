@@ -1,11 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test_node</title>
+    <title>Portfolio de Hanna Traoré</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        .contact a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hanna Dev votre entreprise specialisé dans la productions des logiciel etc.....</h1>
+    <header>
+        <h1>Hanna Traoré</h1>
+        <p>Étudiante passionnée et créatrice de projets éducatifs</p>
+    </header>
+
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Bonjour ! Je suis Hanna, une étudiante motivée, passionnée par l'éducation et le partage des connaissances. Je crée des projets pour aider les élèves à apprendre plus efficacement et à renforcer leurs compétences.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>EntraideScolaire</h3>
+                <p>Une plateforme pour aider les élèves du CEG jusqu’en Terminale à mieux comprendre leurs cours et partager des exercices corrigés.</p>
+            </div>
+            <div class="project-card">
+                <h3>Projet 2</h3>
+                <p>Description de ton autre projet ou idée ici.</p>
+            </div>
+            <div class="project-card">
+                <h3>Projet 3</h3>
+                <p>Description de ton autre projet ou idée ici.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <p class="contact">Vous pouvez me contacter par email : <a href="mailto:traorehanna01@gmail.com">traorehanna01@gmail.com</a></p>
+    </section>
+
+    <footer>
+        &copy; 2025 Hanna Traoré | Tous droits réservés
+    </footer>
 </body>
 </html>
